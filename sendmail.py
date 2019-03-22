@@ -18,7 +18,7 @@ def get_host_ip():
 def get_host_name():
     return os.uname()[1]
 
-def sendmail(subject, mail_msg, to= ["jinyf@ktkt.com"]):
+def sendmail(subject, mail_msg, to= ["jyf@ktkt.com"]):
     # 第三方 SMTP 服务
     mail_host="smtp.exmail.qq.com"  #设置服务器
     mail_user="xxx@qq.com"    #用户名
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     print "Subject:", args.subject
     print "to", args.to
 
-    receivers = ["jinyf@ktkt.com"]
+    receivers = ["jyf@ktkt.com"]
     # print type(args.to)
     if len(args.to) > 0:
         receivers = args.to
